@@ -1,0 +1,14 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+#title,
+.msg {
+	white-space-collapse: preserve;
+}
+
+button {
+	width: 25ch;
+}
+
+.toast {
+	min-width: 50%;
+}

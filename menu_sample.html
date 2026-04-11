@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<form id="form" action="motd_dialog_builder.php" method="post" hidden>
+		<input name="userid" value="1">
+		<input name="secret" value="1234">
+		<input name="type" value="1"> <!-- DIALOG_MENU -->
+		<input name="title" value="Menu sample">
+		<input name="msg" value="Test message">
+		<input name="previous" value="Previous">
+		<input name="next" value="Next">
+		<input name="back" value="Back">
+	</form>
+
+	<script>
+		let form = document.getElementById('form')
+
+		for (let i = 7; i < 15; ++i) {
+			let input = document.createElement('input')
+			input.setAttribute('name', `item_${i}`)
+			input.setAttribute('value', `Item ${i + 1}`)
+			form.append(input)
+		}
+
+		form.submit()
+	</script>
+</body>
+
+</html>

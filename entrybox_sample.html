@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<form id="form" action="motd_dialog_builder.php" method="post" hidden>
+		<input name="userid" value="1">
+		<input name="secret" value="1234">
+		<input name="type" value="3"> <!-- DIALOG_ENTRY -->
+		<input name="title" value="Entrybox sample">
+		<input name="msg" value="Enter the value:">
+		<input name="submitStr" value="Submit">
+		<input name="back" value="Back">
+	</form>
+
+	<script>
+		document.getElementById('form').submit()
+	</script>
+</body>
+
+</html>
